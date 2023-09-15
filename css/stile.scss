@@ -2,6 +2,11 @@ body {
    margin: 0%;
 }
 @media (min-width: 1200px){
+    img {
+        width: 200px;
+        height: 104px;
+        border-radius: 55%;
+    }
 .headline {
     display: flex;
     background-color:aqua;
@@ -12,6 +17,7 @@ body {
     align-content: center;
     justify-content: flex-start;
     align-items: center;
+    height: 100%;
 }
   .locomotive {
     width: 116px;
@@ -83,8 +89,20 @@ p:first-letter {
     align-items: center;
     }
     .nav_link {
-        margin-left: 5%;
+        margin-left: 8%;
         // padding-left: 1%;
+    }
+    .List_of_visitors {
+        background-color: rgb(224, 225, 211);
+        height: auto;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-content: center;
+        justify-content: flex-start;
+        align-items: center;
+        margin: 0%;
     }
 }
 
