@@ -1,7 +1,16 @@
-
+body {
+    margin: auto;
+}
 // .container {
 // background-color: bs-primary;
 // }
+.frame{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap; 
+    justify-content: center;
+}
 @media (min-width: 1200px){
 .headline {
     background-color:rgb(17, 208, 208);
@@ -10,30 +19,30 @@
     flex-direction: row;
     flex-wrap: wrap;
     align-content: center;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
     height: 100px;
+ 
 }
   .locomotive {
-    width: 116px;
-    height: 100px;
-
+    // width: 100%;
+    height: 100%;
+padding: 0% 0% 0% 0%;
   }
-
+.img {
+    padding: 100px;
+    height: 1px;
+}
 .transition{
-    flex: auto;
     display: flex;
     flex-direction: column;
-    font-size: 14px;
     max-width: 30ch;
     initial-letter: 3;
     font-size: 30px;
     font-weight: bold;
-    color: rgb(44, 47, 44);
     margin-right: 5px;
     border-radius: 50%;
-    width: 45%;
-    border-radius: 50%;
+    width: 100%;
     box-shadow: 0 0 10px rgba(26, 9, 9, 1.4);
     padding: 0.2em;
     margin-bottom: 1em;
@@ -58,9 +67,75 @@ p:first-letter {
     color: #f00;
     margin-right: 5px;
 }
-
+.nav_link {
+height: 40%;
+}
 }
 
+    /* месяцы и годы */
+    @mixin clearfix() {
+      &:before,
+      &:after {
+        content: " ";
+        display: table;
+      }
+      &:after {
+        clear: both;
+      }
+    }
+    .calendar {
+      $day-width: 60px;
+      width: $day-width * 7;
+      font-size: 24px;
+      border: solid 3px #afafaf;
+      border-radius: 0px 0px 10px 0px;
+      border-top: none;
+      border-left: none;
+      .calendar-head {
+        @include clearfix();
+        div {
+          float: left;
+          width: $day-width;
+          text-align: center;
+          color: #7b7b7b;
+        }
+      }
+      .calendar-body {
+        @include clearfix();
+        div {
+          position: relative;
+          float: left;
+          box-sizing: border-box;
+          width: $day-width - 8px;
+          height: $day-width - 8px;
+          margin: 4px;
+          padding-top: $day-width / 5;
+          border-radius: 15px;
+          text-align: center;
+          background: #799ffa;
+          color: #3b3b3b;
+          &.no-day {
+            background: none;
+          }
+          &.cur-day {
+            background: #394ffa;
+            color: #fff;
+          }
+        }
+      }
+    }
+#clock {
+  padding: 100px;
+  font-size: 90px;
+  font-family: cursive;
+  font-weight: bold;
+  width: 400px;
+  height: 135px;
+  background-color: aqua;
+  border: solid 3px #afafaf;
+  border-radius: 0px 10px 0px 10px;
+
+}
 
 //  @media (min-width: 992px);
 // .container {
