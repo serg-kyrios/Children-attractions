@@ -17,18 +17,18 @@ function update() {
 update();
 setInterval(update, 1000);
 
-var calendarBody = document.querySelector('.calendar .calendar-body');
-var dayInMonth = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31];
+let calendarBody = document.querySelector('.calendar .calendar-body');
+let dayInMonth = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31];
 function genCalendar(date) {
-    var curDay = date.getDate();
+    let curDay = date.getDate();
     date.setDate(1);
-    var startDay = date.getDay();
-    var daysTotal = !(date.getFullYear() % 4) && date.getMonth() === 1 ? 29 : dayInMonth[date.getMonth()];
-    var content = '';
-    for (var i = 0; i < startDay; i++) {
+    let startDay = date.getDay();
+    let daysTotal = !(date.getFullYear() % 4) && date.getMonth() === 1 ? 29 : dayInMonth[date.getMonth()];
+    let content = '';
+    for (let i = 0; i < startDay; i++) {
         content += '<div class="no-day"></div>';
     }
-    for (var i = 1; i <= daysTotal; i++) {
+    for (let i = 1; i <= daysTotal; i++) {
         if (i === curDay) {
             content += '<div class="cur-day">' + i + '</div>';
         } else {
@@ -39,7 +39,8 @@ function genCalendar(date) {
 }
 genCalendar(new Date());
 
-ul.append(...getListContent());
+
+// ul.append(...getListContent());
 // const List_of_visitors =  document.createElement(List_of_visitors);
 // let div = document.createElement('div');
 // let textNode = document.createTextNode('А вот и я');
