@@ -13,6 +13,7 @@
 
 </head>
 <body>
+  <div class="container" >
         <div class="headline">
               <div class="emblem"> <img src="./content/GAME1.png" alt="GAME"></div>
                 <a class="nav_link "  href="index.html"> <div class="
@@ -38,29 +39,46 @@
     </div>
 </div>
 </div>
-    <div class="wrapper">
-			<h1>
-				<p><span class="yellow">Запис відвідувачів</span> </p>
-        <div>
-          <label class="test-input-label">Ім'я дитини:</label>
-          <input type="text" id="test-input">
-       </div>
-       <div>
-          <label class="time-input-label">Час:</label>
-          <!-- <input type="date" id="date-input"> -->
-          <input type="time" id="time-input">
-       </div>
-       <div>
-          <label>Кількість відвідувачів:</label>
-          <input type="number" id="row-limiter" placeholder="50000" value="3" min="1" max="50000">
-       </div>
-    </section><br>
 
+
+
+
+    <form action="/tutorial/action.html">
+      <fieldset class="fieldset">
+        <div class="wrapper">
+          <h2>
+            <p><span class="yellow">Запис відвідувачів</span> </p>
+            <div class="form_submit">
+              <label class="test_input-label">Ім'я дитини:</label> </div>
+              <div class="form_input"><input type="text" name="firstname" placeholder="First name"><br /><br />
+          
+          </div>
+           <div class="form_submit">
+           <label class="test_input_label">Телефон відповідального:</label></div>
+           <div class="form_input">
+           <input type="text" name="phone" placeholder="Phone number"><br /><br /></div>      
+            <label class="form_submit">Час:</label>
+            <!-- <input type="date" id="date-input"> -->
+           <div class="form_input"> 
+            <input type="time" id="time_input">
+          </div> 
+         <div class="form_submit">
+          <label>Кількість відвідувачів:</label></div> 
+          <div class="form_input">
+          <input type="number" id="row_limiter" placeholder="50000" value="2" min="1" max="50000"></div>
+       
+        </section><br>
+        <div class="class="form_submit>
+          <button type="submit" class="form_submit_button">Кнопка відправки форми</button>
+        </div></h2>
+  </fieldset>
+</div>
+    </form>
     <!-- <input type="submit" value="Submit" class="submit-button">
  </form><br> -->
 
- <table id="data_table">
- <p id="empty_message"></p></table>
+ <!-- <table id="data_table">
+ <p id="empty_message"></p></table> -->
 			<!-- </h1>
 			<h3>П.І.Б. дитини</h3>
 			<div tabindex="-1" class="lesson">
@@ -75,13 +93,10 @@
 							<textarea tabindex="1" id="input_2" type="text" name="nameTextarea" class="main-form__textarea" placeholder="Введите что-то..." autocomplete="off"></textarea>
 						</div>
 					</div> -->
+
+
 				
-					<div class="main-form__column">
-						<button type="submit" class="main-form__button">Кнопка отправки формы</button>
-					</div>
-				</form>
-			</div>
-		</div>
+			
 </body>
 <script src="./script.js"></script>
 </html>

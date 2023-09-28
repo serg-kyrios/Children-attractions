@@ -39,7 +39,19 @@ function genCalendar(date) {
 }
 genCalendar(new Date());
 
+// let showPrompt = submit( function(value) {
+//     alert(value);
+//   });
+// let form = document.createElement('form');
+// form.action = 'https://googl,e.com/search';
+// form.method = 'GET';
 
+// form.innerHTML = '<input name="q" value="test">';
+
+// // перед отправкой формы, её нужно вставить в документ
+// document.body.append(form);
+
+// form.submit();
 // ul.append(...getListContent());
 // const List_of_visitors =  document.createElement(List_of_visitors);
 // let div = document.createElement('div');
