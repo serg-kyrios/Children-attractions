@@ -17,7 +17,7 @@ function update() {
 update();
 setInterval(update, 1000);
 
-let calendarBody = document.querySelector('.calendar .calendar-body');
+let calendarBody = document.querySelector('.calendar .calendar_body');
 let dayInMonth = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31];
 function genCalendar(date) {
     let curDay = date.getDate();
@@ -26,11 +26,11 @@ function genCalendar(date) {
     let daysTotal = !(date.getFullYear() % 4) && date.getMonth() === 1 ? 29 : dayInMonth[date.getMonth()];
     let content = '';
     for (let i = 0; i < startDay; i++) {
-        content += '<div class="no-day"></div>';
+        content += '<div class="no_day"></div>';
     }
     for (let i = 1; i <= daysTotal; i++) {
         if (i === curDay) {
-            content += '<div class="cur-day">' + i + '</div>';
+            content += '<div class="cur_day">' + i + '</div>';
         } else {
             content += '<div>' + i + '</div>';
         }
