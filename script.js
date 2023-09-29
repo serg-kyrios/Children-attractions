@@ -1,6 +1,4 @@
 'use strict';
-
-
 setTimeout(() => (document.body.style.background = 'aqua'), 1000);
 
 function update() {
@@ -39,36 +37,4 @@ function genCalendar(date) {
 }
 genCalendar(new Date());
 
-// let showPrompt = submit( function(value) {
-//     alert(value);
-//   });
-// let form = document.createElement('form');
-// form.action = 'https://googl,e.com/search';
-// form.method = 'GET';
-
-// form.innerHTML = '<input name="q" value="test">';
-
-// // перед отправкой формы, её нужно вставить в документ
-// document.body.append(form);
-
-// form.submit();
-// ul.append(...getListContent());
-// const List_of_visitors =  document.createElement(List_of_visitors);
-// let div = document.createElement('div');
-// let textNode = document.createTextNode('А вот и я');
-// let List_of_visitors;
-// let List_of_visitor;
-//  List_of_visitors = List_of_visitor;
-// let div = document.createElement('div');
-// div.className = 'List_of_visitors';
-
-// div.innerHTML = '<strong>Список відвідувачів</strong> Вы прочитали важное сообщение.';
-
-// document.body.append(div);
-
-// let div = document.createElement('div');
-// div.className = 'number';
-// div.innerHTML = '<strong>Всем привет!</strong> Вы прочитали важное сообщение.';
-
-// document.body.append(div);
 

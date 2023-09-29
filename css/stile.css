@@ -125,7 +125,7 @@ input {
 }
 
 #clock {
-  padding: 100px;
+  padding: 100px 20px 10px 20px;
   font-size: 90px;
   font-family: cursive;
   font-weight: bold;
@@ -140,15 +140,15 @@ input {
   border-color: #799ffa;
 }
 
-fieldset {
+.for_fieldset {
   background: #f6f8ff;
   border: 2px solid #4238ca;
   border-radius: 6%;
-  height: 100%;
 }
 
 .container {
   width: 100%;
+  height: 100%;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -163,6 +163,7 @@ fieldset {
 
 .form_input {
   width: 100%;
+  padding-bottom: 40px;
 }
 
 .yellow {
@@ -170,6 +171,5 @@ fieldset {
 }
 
 .fieldset {
-  width: 100%;
   height: 100%;
 }
